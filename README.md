@@ -1,1 +1,5 @@
 # daraz_Selenium_bot
+The Daraz.pk Laptop Scraper is a Python script that automates the process of scraping laptop data from the Daraz.pk website. It utilizes the Selenium WebDriver library to navigate through the website, extract relevant information from the laptop listings, and store it in a MySQL database.
+The script starts by establishing a connection to the MySQL database and creating a table to store the scraped data. It then launches a Chrome web driver using Selenium and navigates to the Daraz.pk laptops category page. The script iterates over each laptop listing, extracting information such as the product name, price, original price, discount percentage, rating, and number of reviews. The extracted data is then inserted into the MySQL database table.
+The script also includes functionality to navigate to the next page of laptop listings and continues scraping data until there are no more pages available. It utilizes the Selenium WebDriver's wait functionality to ensure that the page has loaded before proceeding.
+. The scraping task is scheduled to run every Tuesday at 9:00 AM.
