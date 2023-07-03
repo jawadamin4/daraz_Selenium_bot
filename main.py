@@ -133,7 +133,7 @@ def my_bot():
             next_button.click()
 
             # Delay to allow the next page to load
-            time.sleep()
+            time.sleep(10)
 
     except (WebDriverException, Exception) as err:
         logging.error("Error occurred while executing Selenium script: %s", err)
